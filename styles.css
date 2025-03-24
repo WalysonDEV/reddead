@@ -1,0 +1,272 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 0px;
+    transition: 1s ease-in-out;
+
+}
+
+.inversomenu{
+    transition: 0.4s ease-in-out;
+}
+
+
+.inversomenu{
+ transform: scaleX(-1)
+}
+
+.inversomenu:active{
+    transform: scaleX(1)
+}
+
+
+.navegacao {
+    position: absolute;
+    display: flex;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+
+.navegacao ul {
+    margin-top: 20px;
+    display: flex;
+    padding: 10px 0;
+    gap: 10px;
+    margin-left: 10px;
+    
+
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    transition: 0.4s ease-in-out;
+    font-size: 20px;
+    font-family: "Miltonian", serif;
+
+}
+
+
+
+.navegacao a:hover{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.menu img {
+width: 90px;
+margin-right: 38px;
+transition: 1s ease-in-out;
+
+}
+
+.cabeca:active{
+    transform: scaleX(-1)
+
+}
+
+.menu:hover{
+    background-color: rgba(0, 0, 0, 0.444);
+    border-bottom: 2px solid red;
+
+}
+
+.red:hover {
+    padding: 30px;
+    width: 500px;
+}
+
+
+
+
+.miolo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+.miolo img {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    object-fit: cover; 
+    border-bottom: 10px solid black;
+}
+
+.bemvindo {
+    padding: 30px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "Road Rage", sans-serif;
+    letter-spacing: 1px;
+    font-size: 50px;
+    border: 1px solid rgb(193, 1, 1);
+    z-index: 1; 
+    text-align: center;
+}
+
+
+.aviso{ 
+    color: red;
+}
+
+
+
+
+.menu img{
+    max-width: 200px;
+    
+}
+
+h2{
+
+    text-align: center;
+    font-size: 125px;
+    font-family: "Road Rage", sans-serif;
+    color: white;
+    transition: 0.9s ease-in-out;
+}
+
+h2:hover {
+    color: red;
+}
+
+.fotos{
+    padding-top: 40px;
+    padding-bottom: 55px;
+    background-color: rgba(0, 0, 0, 0.359);
+
+}
+
+
+
+
+.fotos-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px); 
+    gap: 35px;
+    justify-content: center;
+
+}
+
+.fotos-grid div {
+    width: 200px; 
+    height: 300px; 
+    border: 5px solid rgb(0, 0, 0); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: 0.9s ease-in-out;
+    justify-self: center;
+}
+
+.fotos-grid img {
+    width: 200px; 
+    height: 300px;
+    transition: 1s ease-in-out;
+}
+
+.fotos-grid :hover{
+    border-color: red;
+    transform: scale(1.2);  
+}
+
+
+
+.procurado{
+ margin-left: 45px;
+}
+
+.sobre p:hover{
+    background-color: rgba(66, 0, 0, 0.771);
+}
+
+
+.sobre{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 60px;
+}
+
+.sobrinho{
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    font-family: "Road Rage", sans-serif;
+}
+
+.sobre p{
+    position: relative;
+    text-align: center;
+    margin-right: 55px;
+    justify-items: center;
+    padding: 40px;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.494);
+    color: rgb(255, 255, 255);
+    font-family: "Road Rage", sans-serif;
+    letter-spacing: 1px;
+    border: 1px solid rgb(193, 1, 1);
+    border-radius: 20px;
+    transition: 0.9s ease-in-out;
+}
+
+
+
+.criador{
+    padding-right: 10px;
+    padding-bottom: 5px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+color: white;
+}
+
+.final {
+    padding: 30px;
+    color: gold;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Road Rage", sans-serif;
+    font-size: 21px;
+    border-top: 2px solid rgb(255, 42, 0);
+
+}
+
+.final p {
+    margin: 5px 0;
+}
+
+
+body{
+    background-image: url(https://images3.alphacoders.com/121/thumb-1920-1210621.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
